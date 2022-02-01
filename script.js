@@ -1,1 +1,51 @@
-alert("hi")
+const form = document.querySelector("form");
+const name = form.querySelector('div #name');
+const email = form.querySelector('div #email');
+const password = form.querySelector('div #password');
+
+
+form.addEventListener("submit", formHandler);
+
+function formHandler(e){
+    // e.preventDefault sudu matro autu refresh ne howar jnno
+    e.preventDefault ();
+
+
+const userInfo = {
+    name: name.value,
+    email : email.value,
+    password : password.value,
+};
+console.log(userInfo);
+// data entry korar por jeno clear hoye jai, tai nicher code gulo.
+name.value = "";
+email.value = "";
+password.value = "";
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
